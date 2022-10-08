@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/my_bg"
+    tools:context=".SignIn">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/edit_phone"
+            android:hint="Phone Number"
+            android:fontFamily="monospace"
+            android:textColorHint="@color/white"
+            android:autofillHints="Phone No:"
+            android:text="01711953262"
+            android:textColor="@color/white"
+            android:textSize="34dp"
+            android:inputType="phone"
+            android:padding="10dp"
+            android:layout_height="wrap_content">
+        </EditText>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/editPassword"
+            android:hint="Password"
+            android:textColorHint="@color/white"
+            android:autofillHints="1234"
+            android:textColorHighlight="@color/cardview_shadow_end_color"
+            android:text="Jabbar"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textSize="34dp"
+            android:inputType="textPassword"
+
+            android:layout_height="wrap_content">
+        </EditText>
+        ></LinearLayout>
+
+    <Button
+
+        android:id="@+id/SignIn"
+        android:text="Sign In"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:layout_margin="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:backgroundTint="@color/SignActive"
+        ></Button>
+
+</RelativeLayout>
